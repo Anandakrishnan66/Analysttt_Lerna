@@ -1,0 +1,43 @@
+{
+  "name": "components",
+  "version": "0.0.0",
+  "description": "components",
+  "author": "AnandaKrishnan <ananda2000krishnan@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/ui_module.ts",
+  "source": "lib/ui_module.ts",
+  
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+
+    "start": "microbundle watch --jsx React.createElement",
+    "test": "node ./__tests__/components.test.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
+    "microbundle": "^0.15.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.5.3"
+  },
+  "dependencies": {
+    "snabbdom": "^3.5.1"
+  }
+}
